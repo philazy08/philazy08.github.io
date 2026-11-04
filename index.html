@@ -19,6 +19,10 @@
 			font-family: monospace;
 		}
 
+		main {
+			text-align: center;
+		}
+
 		h1 {
 			margin: 0;
 			font-size: clamp(2.5rem, 10vw, 8rem);
@@ -28,6 +32,33 @@
 			border-right: 0.08em solid #000;
 			width: 0;
 			animation: typing 2.5s steps(11, end) forwards, cursor 0.7s step-end infinite;
+		}
+
+		.credit {
+			margin: 1.5rem 0 0;
+			color: #777;
+			font-size: 0.85rem;
+			letter-spacing: 0.04em;
+		}
+
+		.credit::before {
+			display: block;
+			width: 2rem;
+			margin: 0 auto 0.75rem;
+			border-top: 1px solid #ccc;
+			content: "";
+		}
+
+		.credit a {
+			color: #000;
+			text-decoration-color: #aaa;
+			text-underline-offset: 0.2em;
+			transition: text-decoration-color 0.2s ease;
+		}
+
+		.credit a:hover,
+		.credit a:focus-visible {
+			text-decoration-color: currentColor;
 		}
 
 		@keyframes typing {
@@ -41,7 +72,9 @@
 	</style>
 </head>
 <body>
-	<h1>phil hägeli</h1>
-    <p>credits to eneas</p>
+	<main>
+		<h1>phil hägeli</h1>
+		<p class="credit">Credits an <a href="https://eneas-inf.github.io/" target="_blank" rel="noopener noreferrer">Eneas</a></p>
+	</main>
 </body>
 </html>
