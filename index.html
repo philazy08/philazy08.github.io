@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>phil hägeli</title>
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #fff;
+			color: #000;
+			font-family: monospace;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: clamp(2.5rem, 10vw, 8rem);
+			font-weight: 400;
+			white-space: nowrap;
+			overflow: hidden;
+			border-right: 0.08em solid #000;
+			width: 0;
+			animation: typing 2.5s steps(11, end) forwards, cursor 0.7s step-end infinite;
+		}
+
+		@keyframes typing {
+			from { width: 0; }
+			to { width: 11ch; }
+		}
+
+		@keyframes cursor {
+			50% { border-color: transparent; }
+		}
+	</style>
+</head>
+<body>
+	<h1>phil hägeli</h1>
+</body>
+</html>
